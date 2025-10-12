@@ -271,3 +271,35 @@ function toggleFaq(element) {
                 startCount();
             }
         });
+
+ document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // stop normal form submission
+
+      // Get field values
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      // Validate required fields
+      if (!name || !email || !phone || !message) {
+        alert("Please fill all fields before submitting!");
+        return;
+      }
+
+      // Format message for WhatsApp
+      const whatsappMessage = `*New Enquiry*%0A%0A👤 *Name:* ${name}%0A📧 *Email:* ${email}%0A📞 *Phone:* ${phone}%0A💬 *Message:* ${message}`;
+
+      // Your WhatsApp number (with country code, no + or spaces)
+      const phoneNumber = "919545689533";
+
+      // WhatsApp URL
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+
+      // Open WhatsApp in new tab
+      window.open(whatsappURL, "_blank");
+    });
+  });
