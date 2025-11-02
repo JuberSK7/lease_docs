@@ -195,7 +195,7 @@ function scrollTo(selectors) {
     await new Promise((r) => setTimeout(r, 800));
 
     localStorage.setItem("formSubmitted", "true");
-    alert("Form submitted successfully!");
+    // alert("Form submitted successfully!");
     closePopup();
 
     submitBtn.disabled = false;

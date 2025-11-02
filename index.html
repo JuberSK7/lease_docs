@@ -74,12 +74,13 @@
         <span class="close-btn" id="closeBtn">&times;</span>
         <h4>INQUIRY FORM</h4>
         <p>Be the part of <br /><b>Maha Rent Agreement</b></p>
-
+        <!-- id="inquiryForm" -->
         <form id="inquiryForm">
           <div class="mb-3">
             <input
               id="name"
               type="text"
+              name="name"
               class="form-control"
               placeholder="Enter Your Name"
               required
@@ -89,6 +90,7 @@
             <input
               id="email"
               type="email"
+              name="email"
               class="form-control"
               placeholder="Enter Your Mail"
               required
@@ -98,6 +100,7 @@
             <input
               id="tel"
               type="tel"
+              name="tel"
               class="form-control"
               placeholder="Enter Your Telephone"
               required
@@ -106,6 +109,7 @@
           <div class="mb-3">
             <textarea
               id="message"
+              name="message"
               class="form-control"
               placeholder="Enter Your Message"
               rows="3"
@@ -271,6 +275,7 @@
           <input
             type="text"
             id="enqNameMain"
+            name="name"
             class="form-control"
             placeholder="Enter Your Name"
             required
@@ -280,6 +285,7 @@
           <input
             type="email"
             id="enqEmailMain"
+            name="email"
             class="form-control"
             placeholder="Enter Your Mail"
             required
@@ -288,6 +294,7 @@
         <div class="mb-3">
           <input
             type="tel"
+            name="tel"
             id="enqPhoneMain"
             class="form-control"
             placeholder="Enter Your Telephone"
@@ -298,6 +305,7 @@
           <textarea
             class="form-control"
             id="enqMessageMain"
+            name="message"
             placeholder="Enter Your Message"
             rows="3"
           ></textarea>
@@ -494,125 +502,6 @@
           </div>
         </div>
       </div>
-      <!-- Title -->
-      <!-- <div class="title-section mt-4" id="templatemo-portfolio">
-        <h2 class="container_headeing">
-          STAMP DUTY CALCULATION FOR LEAVE & LICENSE AGREEMENT REGISTRATION
-        </h2>
-        <p class="subtitle">
-          YOU CAN CALCULATE THE TENTATIVE COST OF RENT AGREEMENT REGISTRATION
-          HERE
-        </p>
-      </div> -->
-
-      <!-- 
-      <div
-        class="row stamp-duty-form-container"
-        style="display: flex; align-items: center; justify-content: center"
-      >
-        <div class="col-md-8 calc-form">
-          <form>
-            <div class="row">
-              <div class="col-md-6">
-                <label for="months">NUMBER OF MONTHS*</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="months"
-                  placeholder="Maximum 60"
-                />
-              </div>
-              <div class="col-md-6">
-                <label for="rent">MONTHLY RENT*</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="rent"
-                  placeholder="Monthly Rent"
-                />
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-6">
-                <label for="refundable">REFUNDABLE SECURITY DEPOSIT*</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="refundable"
-                  placeholder="Refundable Security Deposit"
-                />
-              </div>
-              <div class="col-md-6">
-                <label for="nonrefundable"
-                  >NON REFUNDABLE SECURITY DEPOSIT*</label
-                >
-                <input
-                  type="number"
-                  class="form-control"
-                  id="nonrefundable"
-                  placeholder="0"
-                />
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label>Type:</label><br />
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="type"
-                  id="fixed"
-                  checked
-                />
-                <label class="form-check-label" for="fixed">Fixed</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="type"
-                  id="incremental"
-                />
-                <label class="form-check-label" for="incremental"
-                  >Incremental</label
-                >
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-6">
-                <label for="mobile">MOBILE NO*</label>
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="mobile"
-                  placeholder="Contact Details"
-                />
-              </div>
-              <div class="col-md-6">
-                <label for="location">LOCATION*</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="location"
-                  placeholder="Property Location"
-                />
-              </div>
-            </div>
-
-            <div class="text-center mt-4">
-              <button type="submit" class="btn btn-orange me-3">
-                CALCULATE
-              </button>
-              <button type="reset" class="btn btn-orange">RESET</button>
-            </div>
-
-
-          </form>
-        </div>
-      </div> -->
     </div>
     <!-- /.templatemo-portfolio -->
 
@@ -627,19 +516,19 @@
           <!-- First Counter Box -->
           <div class="col-md-3 col-12 counter-box">
             <i class="fas fa-file-alt"></i>
-            <h2 class="counter" data-target="1200">0</h2>
+            <h2 class="counter" data-target="400">0</h2>
             <p>Agreements Registered Every Month</p>
           </div>
           <!-- Second Counter Box -->
           <div class="col-md-3 col-12 counter-box">
             <i class="fas fa-bullseye"></i>
-            <h2 class="counter" data-target="2400">0</h2>
-            <p>Agreements Yearly</p>
+            <h2 class="counter" data-target="5000">0</h2>
+            <p>Agreements Delivered </p>
           </div>
           <!-- Third Counter Box -->
           <div class="col-md-3 col-12 counter-box">
             <i class="fas fa-heart"></i>
-            <h2 class="counter" data-target="5999">0</h2>
+            <h2 class="counter" data-target="7000">0</h2>
             <p>Happy Customers</p>
           </div>
         </div>
@@ -895,14 +784,18 @@
             <h5 class="footer-title">Address</h5>
             <p class="footer-subtitle">
               Fortune Business Center,<br />
-              Near Aundh-ravet Brt Road, Wakad, Pune 411057,
+              Oppo Ambience Hotel, Aundh Ravet BRT Road, Wakad, Pune 411057
             </p>
           </div>
           <!-- Email Section -->
           <div class="col-md-3 text-center">
             <h5 class="footer-title">Email Us At</h5>
             <p class="footer-subtitle">
-              <i class="fas fa-envelope"></i>support@maharentagreement.com
+              <i class="fas fa-envelope"></i>
+              <!-- support@maharentagreement.com -->
+                <a href="mailto:support@maharentagreement.com" class="email-link">
+                   support@maharentagreement.com
+                  </a>
             </p>
           </div>
           <!-- Links Section -->
@@ -984,75 +877,79 @@
       <img src="./images/callus.png" />
     </a>
 
+   <a class="whatsapp-btn" title="Chat on WhatsApp"  href="https://wa.me/918799996907?text=I%20am%20inquiry%20regarding%20agreement%20registration"
+            target="_blank">
+      <img src="./images/whats-app-white.png" alt="WhatsApp" />
+   </a>
+
     <script>
       const inquiryForm = document.getElementById("inquiryForm");
-      if (inquiryForm) {
-        inquiryForm.addEventListener("submit", function (e) {
-          e.preventDefault();
 
-          const name = document
-            .querySelector("#inquiryForm #name")
-            .value.trim();
-          const email = document
-            .querySelector("#inquiryForm #email")
-            .value.trim();
-          const tel = document.querySelector("#inquiryForm #tel").value.trim();
-          const message = document
-            .querySelector("#inquiryForm #message")
-            .value.trim();
+      document
+        .getElementById("inquiryForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // stop normal page reload
 
-          if (!name || !email || !tel || !message) {
-            alert("Please fill all fields before submitting!");
-            return;
-          }
+          // collect form data
+          const formData = new FormData(this);
 
-          const whatsappMessage = `*New Inquiry For Agreement*%0A%0A *Name*: ${name}%0A *Email*: ${email}%0A *Phone*: ${tel}%0A *Message*: ${message}`;
-          const phoneNumber = "918799996907";
-          const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
-          window.open(whatsappURL, "_blank");
+          // send data using AJAX
+          fetch("sendMail.php", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.text())
+            .then((result) => {
+              alert("✅ Thank you! Your inquiry has been sent successfully.");
+              document.getElementById("inquiryForm").reset();
+            })
+            .catch((error) => {
+              alert("❌ Something went wrong. Please try again.");
+              console.error(error);
+            });
         });
-      }
     </script>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const enquireForm = document.getElementById("enquireFormMain");
+      document
+        .getElementById("enquireFormMain")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // stop page reload
 
-        enquireForm.addEventListener("submit", function (e) {
-          e.preventDefault();
+          const formData = new FormData(this);
 
-          // Get field values
-          const name = document.getElementById("enqNameMain").value.trim();
-          const email = document.getElementById("enqEmailMain").value.trim();
-          const phone = document.getElementById("enqPhoneMain").value.trim();
-          const message = document
-            .getElementById("enqMessageMain")
-            .value.trim();
-
-          // Validate fields
-          if (!name || !email || !phone || !message) {
-            alert("Please fill all fields before submitting!");
-            return;
-          }
-
-          // Format WhatsApp message
-          const whatsappMessage = `*New Enquiry For Agreement*%0A%0A *Name:* ${name}%0A *Email:* ${email}%0A *Phone:* ${phone}%0A *Message:* ${message}`;
-
-          // Your WhatsApp number (without + or spaces)
-          const phoneNumber = "918799996907";
-
-          // WhatsApp link
-          const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
-
-          // Open WhatsApp
-          window.open(whatsappURL, "_blank");
-
-          // Clear the form
-          enquireForm.reset();
+          fetch("sendMail.php", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.text())
+            .then((result) => {
+              alert("✅ Thank you! Your inquiry has been sent successfully.");
+              this.reset();
+            })
+            .catch((error) => {
+              alert("❌ Something went wrong. Please try again.");
+              console.error(error);
+            });
         });
-      });
     </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const whatsappBtn = document.getElementById("whatsappBtn");
+
+  // Your WhatsApp number (with country code, no + or spaces)
+  const phoneNumber = "918799996907";
+
+  if (whatsappBtn) {
+    whatsappBtn.addEventListener("click", function () {
+      const defaultMessage = "Hello! I want to know more about your services.";
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`;
+      window.open(whatsappURL, "_blank");
+    });
+  }
+});
+</script>
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/stickUp.min.js" type="text/javascript"></script>
